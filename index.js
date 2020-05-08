@@ -87,7 +87,7 @@ canvas.addEventListener("mousedown", (event) => {
 });
 
 canvas.addEventListener("mousemove", (event) => {
-    if (drag && !tracking_mode) {
+    if (drag && tracking_mode) {
         const { width, height } = canvas.getBoundingClientRect();
         mouse_pos = new Vector2(
             (event.offsetX / width) * SCREEN_WIDTH,
